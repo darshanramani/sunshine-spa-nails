@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sunshine Spa &amp; Nails | Nail Salon in CF Fairview Mall</title>
+<meta name="description" content="Sunshine Spa And Nails, lower level of CF Fairview Mall (Entrance #1), North York. Manicures, pedicures, acrylics, gel and nail art. Call (416) 498-5431.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#ff6f91;--sun:#ffb938;--peach:#fff1e9;--blush:#ffe3e3;--ink:#2d1f2a;--muted:#81707b;--line:#f3d9d4;--r:26px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--peach);color:var(--ink);font:16px/1.65 Poppins,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.08}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font-weight:600;transition:transform .2s,background .4s,box-shadow .4s}
+.btn:hover{transform:translateY(-2px)}
+.btn-a{background:var(--accent);color:#fff;box-shadow:0 14px 30px -14px var(--accent)}
+.btn-o{background:#fff;border:1px solid var(--line)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);transition:color .4s}
+
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.3s}
+nav.scrolled{background:rgba(255,241,233,.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav-in{height:74px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;font:800 22px "Playfair Display",serif}
+.logo .sun{width:34px;height:34px;animation:spin 20s linear infinite}
+.logo small{display:block;font:500 11px Poppins;letter-spacing:.2em;color:var(--muted)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.links{display:flex;gap:30px;font-weight:500}
+.links a:hover{color:var(--accent)}
+.status{font-size:13px;font-weight:600;display:inline-flex;gap:8px;align-items:center;padding:7px 14px;border-radius:99px;background:#fff;border:1px solid var(--line)}
+.status i{width:8px;height:8px;border-radius:50%;background:#bbb}.status.open i{background:#22c55e}.status.closed i{background:#ef4444}
+.burger{display:none;border:0;background:none;font-size:28px;cursor:pointer;color:var(--ink)}
+
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 70px;position:relative;overflow:hidden}
+.rays{position:absolute;width:1400px;height:1400px;left:50%;top:50%;margin:-700px 0 0 -700px;background:repeating-conic-gradient(from 0deg,rgba(255,185,56,.13) 0 6deg,transparent 6deg 18deg);animation:spin 90s linear infinite;mask:radial-gradient(circle,#000 20%,transparent 65%);-webkit-mask:radial-gradient(circle,#000 20%,transparent 65%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,94px);font-weight:800;margin:16px 0 18px}
+.hero h1 i{color:var(--accent);transition:color .4s}
+.lead{font-size:18px;color:var(--muted);max-width:500px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.shades{margin-top:36px}
+.shades p{font-size:13px;color:var(--muted);margin-bottom:10px}
+.shades div{display:flex;gap:10px}
+.shades button{width:38px;height:38px;border-radius:50% 50% 50% 8px;border:3px solid #fff;cursor:pointer;box-shadow:0 6px 14px -6px rgba(0,0,0,.4);transition:transform .25s}
+.shades button:hover,.shades button.on{transform:translateY(-4px) rotate(-8deg) scale(1.08)}
+.collage{position:relative;height:560px}
+.collage .c{position:absolute;border-radius:var(--r);background:#f4cfc8 center/cover;box-shadow:0 30px 60px -30px rgba(80,20,40,.5);border:6px solid #fff}
+.c1{width:58%;height:70%;left:0;top:8%;transform:rotate(-4deg);animation:float 7s ease-in-out infinite}
+.c2{width:48%;height:52%;right:0;top:0;transform:rotate(5deg);animation:float 8s ease-in-out infinite -2s}
+.c3{width:46%;height:44%;right:6%;bottom:0;transform:rotate(-2deg);animation:float 6s ease-in-out infinite -4s}
+@keyframes float{50%{translate:0 -12px}}
+.bottle{position:absolute;left:44%;bottom:2%;width:74px;filter:drop-shadow(0 14px 18px rgba(0,0,0,.25));animation:float 5s ease-in-out infinite}
+.bottle .fill{fill:var(--accent);transition:fill .4s}
+
+.strip{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap}
+.strip div{display:inline-block;padding:16px 0;font:italic 600 22px "Playfair Display",serif;animation:tick 34s linear infinite}
+.strip span{margin:0 28px}.strip b{color:var(--sun)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+section{padding:100px 0}
+.head{text-align:center;max-width:680px;margin:0 auto 50px}
+.head h2{font-size:clamp(36px,5vw,58px);margin:10px 0}
+.head p{color:var(--muted)}
+
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.s{background:#fff;border-radius:var(--r);padding:30px;border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .3s}
+.s:hover{transform:translateY(-6px)}
+.s::before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;right:-40px;top:-40px;background:var(--blush);transition:transform .5s}
+.s:hover::before{transform:scale(1.6)}
+.s .ic{font-size:34px;position:relative}
+.s h3{font-size:26px;margin:14px 0 8px;position:relative}
+.s p{color:var(--muted);font-size:15px;position:relative}
+
+.team{background:#fff;border-block:1px solid var(--line)}
+.artists{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.artist{text-align:center;padding:30px 20px;border-radius:var(--r);background:var(--peach);border:1px solid var(--line)}
+.artist .ini{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font:800 32px "Playfair Display";color:#fff;background:linear-gradient(135deg,var(--accent),var(--sun))}
+.artist p{color:var(--muted);font-size:14px}
+
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.gal button{aspect-ratio:3/4;border:0;padding:0;border-radius:20px;overflow:hidden;cursor:zoom-in;background:#f4cfc8}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal button:hover img{transform:scale(1.08)}
+.gal button:nth-child(even){transform:translateY(24px)}
+.lb{position:fixed;inset:0;background:rgba(45,31,42,.92);z-index:100;display:none;place-items:center;padding:20px}
+.lb.on{display:grid}.lb img{max-height:86vh;border-radius:16px}
+.lb button{position:absolute;top:16px;right:22px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border-radius:var(--r);padding:28px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.rev:nth-child(2){background:var(--ink);color:#fff}.rev:nth-child(2) small{color:#cbb9c4}
+.rev .st{color:var(--sun);letter-spacing:3px}
+.rev b{margin-top:auto}
+.rev small{color:var(--muted)}
+
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.card{background:#fff;border-radius:var(--r);padding:32px;border:1px solid var(--line)}
+.hours{width:100%;border-collapse:collapse;margin-top:10px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--accent);font-weight:600}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:430px}
+.map iframe{width:100%;height:100%;min-height:430px;border:0}
+.find{display:flex;gap:12px;align-items:flex-start;margin:12px 0}
+.find span:first-child{font-size:20px}
+
+footer{padding:40px 0 110px;text-align:center;color:var(--muted);font-size:14px}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.callbar a{flex:1;justify-content:center}
+
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media (max-width:960px){
+  .links{display:none}
+  .links.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:var(--peach);padding:20px 24px;box-shadow:0 10px 20px -10px rgba(0,0,0,.2)}
+  .burger{display:block}
+  .hero .wrap,.visit{grid-template-columns:1fr}
+  .collage{height:420px}
+  .svc,.reviews{grid-template-columns:1fr 1fr}
+  .artists{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .callbar{display:flex}
+}
+@media (max-width:600px){
+  section{padding:70px 0}
+  .svc,.reviews{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .gal button:nth-child(even){transform:none}
+  .collage{height:340px}
+  .status{display:none}
+}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap nav-in">
+  <a class="logo" href="#top"><svg class="sun" viewBox="0 0 40 40"><circle cx="20" cy="20" r="8" fill="#ffb938"/><g stroke="#ffb938" stroke-width="3" stroke-linecap="round"><path d="M20 2v6M20 32v6M2 20h6M32 20h6M7 7l4 4M29 29l4 4M7 33l4-4M29 11l4-4"/></g></svg><span>Sunshine<small>SPA &amp; NAILS</small></span></a>
+  <div class="links" id="links"><a href="#services">Services</a><a href="#team">Our Team</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a></div>
+  <div style="display:flex;gap:10px;align-items:center"><span class="status" id="status"><i></i><span>…</span></span><button class="burger" id="burger" aria-label="Menu">☰</button></div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="rays" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">CF Fairview Mall · Lower Level</span>
+      <h1>Nails that make you <i>shine.</i></h1>
+      <p class="lead">Manicures, pedicures, acrylics and nail art, done with care and real attention to detail. Some of our clients have been with us for over ten years.</p>
+      <div class="ctas"><a class="btn btn-a" href="tel:+14164985431">Book: (416) 498-5431</a><a class="btn btn-o" href="#services">Our services</a></div>
+      <div class="shades"><p>Tap a shade ✨</p><div id="shades"></div></div>
+    </div>
+    <div class="collage rv" aria-hidden="true">
+      <div class="c c1" data-bg="pinkart"></div>
+      <div class="c c2" data-bg="glitter"></div>
+      <div class="c c3" data-bg="teal"></div>
+      <svg class="bottle" viewBox="0 0 60 110"><rect x="22" y="0" width="16" height="34" rx="3" fill="#2d1f2a"/><rect x="18" y="30" width="24" height="10" rx="2" fill="#4a3442"/><path class="fill" d="M8 44h44c4 0 6 3 6 7v48c0 6-4 10-10 10H12C6 109 2 105 2 99V51c0-4 2-7 6-7z"/><path d="M12 52v40" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".45"/></svg>
+    </div>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true"><div>
+  <span>Manicures</span><b>✦</b><span>Pedicures</span><b>✦</b><span>Acrylics</span><b>✦</b><span>Gel polish</span><b>✦</b><span>Nail art</span><b>✦</b><span>Refills</span><b>✦</b>
+  <span>Manicures</span><b>✦</b><span>Pedicures</span><b>✦</b><span>Acrylics</span><b>✦</b><span>Gel polish</span><b>✦</b><span>Nail art</span><b>✦</b><span>Refills</span><b>✦</b>
+</div></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Services</span><h2>Treat your hands &amp; feet</h2><p>Relax in the chair while our technicians take their time to get every detail right.</p></div>
+    <div class="svc">
+      <div class="s rv"><div class="ic">💅</div><h3>Manicures</h3><p>Shaping, cuticle care and a flawless polish finish, classic or gel.</p></div>
+      <div class="s rv"><div class="ic">🦶</div><h3>Pedicures</h3><p>Foot scrub and calf massage, leaving feet soft and refreshed.</p></div>
+      <div class="s rv"><div class="ic">✨</div><h3>Acrylics</h3><p>Full sets in any length, from natural to long and dramatic.</p></div>
+      <div class="s rv"><div class="ic">🎨</div><h3>Nail Art</h3><p>French tips, glitter, chrome and custom designs.</p></div>
+      <div class="s rv"><div class="ic">🔁</div><h3>Refills</h3><p>Keep your set looking fresh with clean, consistent refills.</p></div>
+      <div class="s rv"><div class="ic">🌸</div><h3>Mani + Pedi</h3><p>The full pampering combo, perfect before a big day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Meet the artists</span><h2>Ask for them by name</h2><p>Our regulars have favourites, and it shows in the reviews.</p></div>
+    <div class="artists">
+      <div class="artist rv"><div class="ini">A</div><h3>Anne</h3><p>A trusted favourite whose clients have followed her for years</p></div>
+      <div class="artist rv"><div class="ini">J</div><h3>John</h3><p>Known for super-clean, detailed and consistent work</p></div>
+      <div class="artist rv"><div class="ini">N</div><h3>Nicole</h3><p>Pays attention to every detail and takes time to perfect it</p></div>
+      <div class="artist rv"><div class="ini">T</div><h3>Tia</h3><p>Relaxing pedicures and manicures with a gentle touch</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Fresh sets</span><h2>Recent work</h2></div>
+    <div class="gal rv" id="gal"></div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:40px">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Kind words</span><h2>Our clients say it best</h2></div>
+    <div class="reviews" id="revs"></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Find us</span><h2>Inside CF Fairview Mall</h2></div>
+    <div class="visit">
+      <div class="card rv">
+        <div class="find"><span>📍</span><span><b>Lower level, 1800 Sheppard Ave E</b><br><span style="color:var(--muted)">Entrance #1, CF Fairview Mall, North York, ON M2J 5A7</span></span></div>
+        <div class="find"><span>📞</span><a href="tel:+14164985431"><b>(416) 498-5431</b></a></div>
+        <div class="find"><span>🚗</span><span style="color:var(--muted)">Come in through mall Entrance #1. We're on the lower level.</span></div>
+        <h3 style="font-size:26px;margin-top:20px">Hours</h3>
+        <table class="hours" id="hours"></table>
+      </div>
+      <div class="map rv"><iframe loading="lazy" title="Map to Sunshine Spa And Nails" src="https://www.google.com/maps?q=Sunshine+Spa+And+Nails,+1800+Sheppard+Ave+E,+North+York,+ON&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Sunshine Spa And Nails · CF Fairview Mall, North York · <a href="tel:+14164985431">(416) 498-5431</a></footer>
+<div class="callbar"><a class="btn btn-a" href="tel:+14164985431">Call to book</a><a class="btn btn-o" href="https://www.google.com/maps/dir/?api=1&destination=Sunshine+Spa+And+Nails+CF+Fairview+Mall+North+York" target="_blank" rel="noopener">Directions</a></div>
+<div class="lb" id="lb"><button aria-label="Close">×</button><img alt=""></div>
+
+<script>
+const P={
+ front:"gps-cs-s/ANWiy9QhoBW_5Z7bNkf5DbqBJidBUZD7Ovsiuyx5V_D0qgLnsX_AkNbMbt4mIc2WZA7Vbuvhd7Fy958zGHcIM4946-YR3wpGFmXvxtI_4-yvoJwATStnvqH--9hegzQktKPSPR7FGae6nIDgPoH0",
+ green:"gps-cs-s/ANWiy9TaxWlpcEswxOJB_LMq5Sap4fANhRGKAHQitgL1SDjPCS0_RGosHp767q9NAjBcEEZejpa1qGPjBnagv1yUA1YJLxWNCnWX2bIryArse0zgd9lXibK7lK-8XtrwwKvmeHJWaXc",
+ pinkart:"gps-cs-s/ANWiy9R07GM9rvzERkGZ-BOgE2pOOVwYP1N7lP_az2jVQpQaq4OZ37Sdt1guPq1Il3PoJxFdEW_U9GRZWwwkFU-9CwdfPvoE8k4rKO52PgCZ8w97Hsujut4-_sfD0R3hKRGtNyCdj4mRCfvIPLh0",
+ teal:"gps-cs-s/ANWiy9RcdrHvQV2q78-axptw8J858sJexvXGhmeoggfH3N2FFwmb4WkBiCuI6TJWLCYlC_dGaOe6daXNG55p2lqiFLvNo1-ARXjTQ1FDr8s-Y4qhzeYr5OJKqKOQbV7AEfYAy5CtM_EsWg",
+ glitter:"gps-cs-s/ANWiy9QV4Uscj_v0H76mwu8sUXP-ZwDnkqrCfW75xkKjqFKlCjgaRw7w4uPfjOjorEvjTyUZfU16NesQeDlJ_DT4RtqYcb5nhqX0qw-1dHzXhgquBuDyLBTfcZYfnILc0E5qTsxMfmzH",
+ yellow:"gps-cs-s/ANWiy9TkEQARTgrR57WHXWJmDkv1CitH6KUsvfx3wWB0QUhgbpzGwB5TjzKrYfQVYpfztBXInxUWgx0Q4WBIhNPPvOBCd8srDXnRekIz1abRjiGFtzHj5HYFraZ_dQ4GcuuH4LE_-HoCxYV0h4xi",
+ lilac:"gps-cs-s/ANWiy9QjQKiUgCJjQwhW_mljw0aLiJv6KdAVDyEjNcGAkDZN75yEYL687GrM7Zewga8-aRAkR8tjvQHIaux2njf1ElSagyxy-KLqMEAgzm05GTnYD50gJvHUJUlSDki8ach6jMypv_yx",
+ french:"gps-cs-s/ANWiy9RuPd4WQuLNSpNSYSc2xDj15rMCe2qU-5hF1MpS0OqVnGz5UOWZ6HS5KlHkJ74yySMVbtR-OHo587o-cHygrCC_LXlXrVAEJe5GpnN072R44RGjbFYwLvLAffV6jA8fzf8ldC1e2w",
+ hotpink:"gps-cs-s/ANWiy9Q115yLXQCLf18EkAD3WguCLz35vp9u0H882PeQVHjssYdUTYZto3DjAfhnY9Mv4aLq63oP-xEMEGCt_e6dBH54lGWg8MXXv_g6R-flSArszgSsLTbQvSkFTEDxzmzePjWOz8aO",
+ blue:"gps-cs-s/ANWiy9Rvm336Ja4vaFbfMTmafU7poVjn0o_j6538t4R8RlyH141yTrchiBKKTr4HhWmxrlnbntzKwXFSeiMHaKqdgswfCe1TA6tEt0p3V9UGUigaoePK4CtXbkEuvy2cZM-fZaYgoq0QUGEGEPAB"
+};
+const img=(k,w=900,h=1200)=>`https://lh3.googleusercontent.com/${P[k]}=w${w}-h${h}-k-no`;
+const HOURS=[[660,1140],null,[600,1260],[600,1260],[600,1260],[600,1260],[600,1260]];
+const REVIEWS=[
+ ["Senobar A.","I’ve been coming here for over 10 years, and I honestly wouldn’t trust anyone else with my nails. Even though I live an hour away now, I still make the drive because I know I’ll always leave happy."],
+ ["Hannah M.","I’ve went around to a lot of nail salons in the city, and this place is by far the most consistent with their work. Specifically with their attention to detail! I recommend coming here, prices are fair as well."],
+ ["Bianca P.","I had a great experience with Tia. She did my pedicure and manicure. I felt relaxed the whole time I was there."],
+ ["Sahar R.","I’ve been going to Mr John for a long time now and I can honestly say he’s one of the best! His work is always super clean, detailed, and He really takes his time and cares about every little detail."],
+ ["Neha N.","It was our first time coming here and we were welcomed by everyone! Nicole was so amazing she paid great attention to every detail and did a wonderful job on my nails."],
+ ["Caterina L.","Looking for a new mani/pedi place??? Look no further than Sunshine Nails. Anne and John are extremely talented in their work and extremely professional and kind."]
+];
+const GAL=["front","glitter","hotpink","french","lilac","yellow","green","blue","pinkart","teal"];
+const SHADES=["#ff6f91","#e63946","#9b5de5","#00b4a6","#f4a261","#2d1f2a"];
+</script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
+document.getElementById('burger').onclick=()=>document.getElementById('links').classList.toggle('open');
+document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>document.getElementById('links').classList.remove('open'));
+document.querySelectorAll('[data-bg]').forEach(e=>e.style.backgroundImage=`url(${img(e.dataset.bg,800,900)})`);
+// shade picker recolours the accent
+const sh=document.getElementById('shades');
+SHADES.forEach((c,i)=>{const b=document.createElement('button');b.style.background=c;b.setAttribute('aria-label','Shade '+(i+1));if(!i)b.className='on';b.onclick=()=>{document.documentElement.style.setProperty('--accent',c);sh.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on')};sh.appendChild(b)});
+const gal=document.getElementById('gal'),lb=document.getElementById('lb');
+GAL.forEach(k=>{const b=document.createElement('button');b.innerHTML=`<img loading="lazy" src="${img(k,600,800)}" alt="Nail work at Sunshine Spa And Nails">`;b.querySelector('img').onerror=()=>b.remove();b.onclick=()=>{lb.querySelector('img').src=img(k,1400,1800);lb.classList.add('on')};gal.appendChild(b)});
+lb.onclick=()=>lb.classList.remove('on');addEventListener('keydown',e=>e.key==='Escape'&&lb.classList.remove('on'));
+const rv=document.getElementById('revs');REVIEWS.forEach(([n,t])=>rv.insertAdjacentHTML('beforeend',`<article class="rev rv"><div class="st">★★★★★</div><p>“${t}”</p><b>${n}<br><small>Google review</small></b></article>`));
+const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const fmt=m=>{let h=Math.floor(m/60),mm=m%60,ap=h>=12?'p.m.':'a.m.';h=h%12||12;return h+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap};
+const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Toronto'}));const d=now.getDay(),mins=now.getHours()*60+now.getMinutes();
+const ht=document.getElementById('hours');[1,2,3,4,5,6,0].forEach(i=>{const h=HOURS[i];ht.insertAdjacentHTML('beforeend',`<tr class="${i===d?'today':''}"><td>${days[i]}</td><td>${h?fmt(h[0])+' – '+fmt(h[1]):'Closed'}</td></tr>`)});
+const st=document.getElementById('status'),h=HOURS[d],open=h&&mins>=h[0]&&mins<h[1];st.classList.add(open?'open':'closed');st.lastElementChild.textContent=open?`Open · until ${fmt(h[1])}`:'Closed now';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+</script>
+</body>
+</html>
